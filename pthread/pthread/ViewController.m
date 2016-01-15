@@ -44,8 +44,15 @@ void * run(void *param)
     
     // 指向线程的指针
     pthread_t thread;
-    // 创建 pthread
+    /**
+     *  创建一个线程
+     *
+     *  @param restrict#> 指向线程的指针 description#>
+     *  @param restrict#> 线程的属性 description#>
+     *  @param <#void <#指向指针的函数
+     */
     pthread_create(&thread, NULL, run, NULL);
+
 }
 
 
